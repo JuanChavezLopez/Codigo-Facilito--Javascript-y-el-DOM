@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Codigo Facilito</a>
+        </div>
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+
+    <div class="container">
+      <div class="jumbotrom">
+        <h2 class="display-2" id="title">Titulo</h2>
+        <p class="description_container" id="descripcion">Breve descripcion</p>
+
+        <form id="course-form">
+          <div class="from-group">
+            <input
+              type="text"
+              class="form-control"
+              id="title-form"
+              placeholder="Ingrese titulo"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              id="descripcion-form"
+              placeholder="Ingrese Descripcion"
+            />
+            <small id="descripcionHelp" class="form-text text-muted"
+              >Escribe una breve descripcion</small
+            >
+          </div>
+          <div class="form-group">
+            <label for="">
+              <input type="checkbox" name="" id="checkbox" />
+              Premium</label
+            >
+          </div>
+          <button type="submit" id="create-course" class="btn btn-info">
+            Create course
+          </button>
+        </form>
+      </div>
+
+      <div class="row">
+        <ul class="list-group">
+          <li class="list-group-item" id="first-course">Python</li>
+          <li class="list-group-item">Javascript</li>
+          <li class="list-group-item">Java 8</li>
+          <li class="list-group-item">Ruby</li>
+          <li class="list-group-item">c#</li>
+          <li class="list-group-item">Kotlin</li>
+          <li class="list-group-item">Perl</li>
+        </ul>
+      </div>
+
+      <!-- cards -->
+      <!-- <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <div class="caption">
+            <h3 id="title_card">Titulo</h3>
+            <p id="description_card">Descripcion</p>
+            <p class="btn btn-danger">Accion</p>
+          </div>
+        </div>
+      </div> -->
+    </div>
+    <footer>
+      <div class="container">
+        <div class="rows">
+          <p class="copyright text-muted">&copy;Codigo Facilito</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="js/app.js"></script>
+</html>
